@@ -21,7 +21,7 @@ public class AddressLookupTests
 
 		// Assert
 
-		postalDb.Verify(d => d.GetAsync("67890"));
+		postalDb.Verify(d => d.GetAsync("67890"), Times.Once);
 
 		result.Should().BeEquivalentTo(new Address { City = "Some City", State = "ST" });
 	}

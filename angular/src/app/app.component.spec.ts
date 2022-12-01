@@ -22,6 +22,13 @@ describe('AppComponent', () => {
 					provide: RandomService,
 					useValue: jasmine.createSpyObj('RandomService', [ 'getRandomNumbers' ])
 				}
+				// {
+				// 	provide: RandomService,
+				// 	useValue: {
+				// 		getRandomNumbers: jasmine.createSpy('getRandomNumbers')
+				// 		// getRandomNumbers: () => of([3, 5])
+				// 	}
+				// }
 			]
 		}).compileComponents();
 	});
