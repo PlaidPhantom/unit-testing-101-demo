@@ -1,0 +1,21 @@
+input, .incbtn {
+	border-radius: 0;
+	border: 1px solid gray;
+	line-height: 1.4;
+	margin: 0;
+	padding: 2px 5px;
+
+	&:first-child {
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+	}
+
+	&:last-child {
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+	}
+
+	&:not(:last-child) {
+		border-right: none;
+	}
+}

@@ -1,0 +1,24 @@
+<main>
+	<h1>Let's add some numbers!</h1>
+	<p>
+		<label>
+			First Value:
+			<app-number-input [(value)]="firstVal"></app-number-input>
+		</label>
+	</p>
+	<p>
+		<label>
+			Second value:
+			<app-number-input [(value)]="secondVal"></app-number-input>
+		</label>
+	</p>
+	<p>
+		Result: <strong>{{ total }}</strong>
+	</p>
+	<p>
+		<button type="button" (click)="loadRandom()" [disabled]="loadingRandom">
+			<span class="spinner" *ngIf="loadingRandom">|</span>
+			Load Random Numbers
+		</button>
+	</p>
+</main>

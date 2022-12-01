@@ -1,5 +1,7 @@
 .vscode/
 
-**/bin/
-**/obj/
-**/TestResults/
+bin/
+obj/
+TestResults/
+
+node_modules/
